@@ -1,0 +1,131 @@
+/* GradDegree.css - Styling for the Graduate Degrees section */
+
+#GraduatedDegrees {
+    background-color: rgb(83, 83, 83);
+    padding: 20px;
+    margin: auto;
+}
+
+.degrees-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Adjusted for default state */
+    gap: 25px;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+    /* Adjust if necessary */
+    max-width: 100%;
+}
+
+.degrees-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 20px;
+    /* Adjusted margin for the heading */
+}
+
+.degree-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.degree-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure images and cards don't exceed their container's width */
+.degree-card,
+.web {
+    max-width: 100%;
+    box-sizing: border-box;
+    /* Include padding and borders in the element's total width */
+}
+
+.web {
+    width: 100%;
+    /* Full width within its container */
+    height: auto;
+    max-width: none;
+    /* Maintain aspect ratio */
+}
+
+
+.certificate-list {
+    list-style-type: none;
+    /* Removes bullet points */
+    padding: 0;
+    /* Removes default padding */
+    margin: 0;
+    /* Adjusts margin as needed */
+}
+
+.certificate-list li {
+    /* Style your list items as needed */
+    padding: 5px 0;
+    /* Example padding, adjust as necessary */
+    color: #555;
+    /* Example text color, adjust as necessary */
+}
+
+/*/ Responsive Adjustments */
+@media (max-width: 768px) {
+    .degrees-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for medium screens */
+        gap: 20px;
+        padding: 10px;
+        width: auto;
+        /* Adjusted for medium screens */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .degrees-container {
+        grid-template-columns: 1fr;
+        /* Single column for small screens */
+        gap: 10px;
+        padding: 0px;
+        width: auto;
+        /* Adjusted for small screens */
+    }
+
+    .degrees-container2{
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 0px;
+        height: auto;
+    }
+
+
+    .degree-card {
+        margin: 0;
+    }
+
+    /* Additional adjustments for smaller screens to enhance alignment */
+    #GraduatedDegrees {
+        padding: 15px 10px;
+        /* Reduce padding on smaller screens for better use of space */
+    }
+
+    .web {
+        max-width: 100%;
+        height: auto;
+    }
+}

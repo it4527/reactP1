@@ -1,0 +1,127 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+
+}
+
+
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(1n) {
+  background-color: rgba(7, 7, 7, 0.822);
+}
+
+section:nth-of-type(2n) {
+  background-color: rgb(236, 148, 16);
+}
+
+.about-div {
+  color: white;
+}
+
+
+/* In App.css or Footer.css */
+.App-footer {
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f8f8f8;
+  --hover-bg-color: #f2f2f2;
+  --text-color: rgb(143, 105, 1);
+  --border-color: #ddd;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Existing navbar styles */
+.navbar {
+  background-color: #333;
+  background-image: linear-gradient(to right, rgb(258, 132, 0), #333);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  transition: top 0.3s;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 17px; /*/ Ensure this has a unit like 'px' */
+  margin: 0;
+}
+
+.navbar ul li {
+  float: left;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 120px;
+}
+
+.navbar ul li:hover {
+  color: black;
+}
+
+/* Media query for screens 768px wide and smaller */
+@media (max-width: 768px) {
+  .navbar ul li {
+    float: none; /* Stack items vertically */
+    font-size: 18px; /* Smaller font size */
+    margin-left: 0; /* Remove margin to align items */
+    padding: 8px 16px; /* Adjust padding */
+  }
+  
+  .navbar {
+    padding: 10px; /* Reduce padding */
+  }
+
+  /* Additional mobile styles */
+  .navbar ul {
+    padding: 0;
+  }
+}

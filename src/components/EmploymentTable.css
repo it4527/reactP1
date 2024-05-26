@@ -1,0 +1,71 @@
+/*/ EmploymentTable.css */
+.employmentTableContainer {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    max-width: 98%;
+    overflow-x: auto;
+}
+
+.employmentTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.employmentTable th, .employmentTable td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.employmentTable th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.employmentTable tr:hover {
+    background-color: #f2f2f2;
+}
+
+.search-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* Make the table responsive */
+@media screen and (max-width: 600px) {
+    .employmentTable thead {
+        display: none;
+    }
+
+    .employmentTable, .employmentTable tbody, .employmentTable tr, .employmentTable td {
+        display: block;
+        width: 100%;
+    }
+
+    .employmentTable tr {
+        margin-bottom: 15px;
+    }
+
+    .employmentTable td {
+        text-align: center;
+    }
+
+    .employmentTable td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

@@ -1,0 +1,168 @@
+.coopTableContainer {
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 500px;
+    /* Example maximum height */
+    overflow-y: auto;
+    /* Enables vertical scrolling within the container */
+    position: relative;
+    /* For potential positioning of inner elements */
+}
+
+.coopTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* subtle shadow for depth */
+    transition: all 0.3s ease;
+    /* /smooth transitions for interactive elements */
+}
+
+.coopTable thead th {
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.coopTable tbody td {
+    background-color: #f8f8f8;
+    color: #302e2e;
+}
+
+tbody tr:hover {
+    background-color: var(--hover-bg-color);
+    cursor: pointer;
+}
+
+tbody td {
+    color: #333;
+    background-color: #fff;
+}
+
+/* Scrollbar Styles for consistency */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+table {
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    /* Slightly larger font for tablet readability */
+    th, td {
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjustments for small tablets and large phones */
+    th, td {
+        padding: 10px;
+        /* Adjust padding */
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Card-like layout for smaller devices like the iPhone 14 */
+    table, tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+        /* Hide table headers */
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        text-align: right;
+        padding: 10px;
+        /* Consistent padding */
+        border-bottom: 0;
+        /* Remove border */
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        /* Ensure padding is consistent */
+        font-weight: bold;
+        text-align: left;
+        white-space: nowrap;
+        /* Prevent text wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* Add ellipsis for overflow */
+    }
+}
+
+/* Additional styling if needed for landscape orientation on mobile */
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    td::before {
+        font-size: 0.85em;
+        /* Smaller font size to fit more content */
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "undergraduate": [
+        {
+            "degreeName": "wmc",
+            "title": "Web & Mobile Computing, B.S.",
+            "description": "Design and build applications across multiple web and mobile platforms. Learn best practices in coding and user interface design.",
+            "concentrations": [
+                "Web Application Development",
+                "Mobile Application Development",
+                "Wearable and Ubiquitous Computing",
+                "Geographic Information Systems"
+            ],
+            "imagePath": "/images/web_mobile.png"
+        },
+        {
+            "degreeName": "hcc",
+            "title": "Human Centered Computing, B.S.",
+            "description": "Design, prototype, and evaluate the user experience with technology. Learn a blend of principles from computing, design, and psychology.",
+            "concentrations": [
+                "Accessibility",
+                "Design",
+                "Front End Development",
+                "Psychology",
+                "Instructional Technology",
+                "Natural Language Processing"
+            ],
+            "imagePath": "/images/human_c.png"
+        },
+        {
+            "degreeName": "cit",
+            "title": "Computing & Information Technologies, B.S.",
+            "description": "Manage complex systems, both real and virtual. Deploy technology where it\u2019s needed most.",
+            "concentrations": [
+                "Database",
+                "Enterprise Administration",
+                "Networking and Communications",
+                "Web Administration",
+                "Web Development"
+            ],
+            "imagePath": "/images/comp.png"
+        }
+    ]
+}

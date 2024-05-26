@@ -1,0 +1,99 @@
+#Faculty {
+  min-height: 100vh;
+  /* Changed from height to min-height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Changed from center to flex-start to accommodate content growing */
+  padding: 20px 0;
+  /* Add some padding to top and bottom */
+  overflow: scroll;
+  background-color: rgba(231, 124, 2, 0.63);
+}
+
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* Keeps your preference for 7 columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.card-margin {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  /* Rounded corners for aesthetics */
+  overflow: hidden;
+  /* /Ensures content does not overflow the card boundaries */
+}
+
+.modal-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Responsive width */
+  max-width: 400px; /* Maximum width to ensure readability */
+  border: 2px solid #000;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px; /* Rounded corners */
+
+}
+.facultyh1 {
+  color: white;
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+  position: relative;
+  padding: 30px;
+  margin-top: 90px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+  .faculty-container {
+    grid-template-columns: repeat(5, 1fr);
+    /* Adjusts to 5 columns for slightly smaller screens */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .faculty-container {
+    grid-template-columns: repeat(4, 1fr);
+    /* Adjusts to 4 columns */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faculty-container {
+    grid-template-columns: repeat(3, 1fr);
+    /* Adjusts to 3 columns for tablets and similar devices */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .faculty-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* Adjusts to 2 columns for smaller devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .faculty-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-left: 20px;
+  }
+
+  .facultyh1 {
+    font-size: 1.4em;
+    /* Slightly smaller font size for small screens */
+    padding: 15px 10px;
+  }
+}

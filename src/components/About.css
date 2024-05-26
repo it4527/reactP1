@@ -1,0 +1,104 @@
+/* General settings for all text elements to ensure consistency */
+.titleColor, .descriptionColor, .quoteColor, .quoteAuthorColor {
+  color: lightblue;
+  /* Common color, consider using CSS variables for theme consistency */
+  max-width: 60%;
+  /* Slightly wider for better readability on wide screens */
+  margin: 10px auto;
+
+  /* Increased margin for better spacing and auto for center alignment */
+  text-align: center;
+  /* Centers the text */
+  line-height: 1.5;
+
+  /* Improved line spacing for readability */
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+
+
+.titleColor {
+  color: white;
+  font-size: 2em;
+  /* Larger font size for titles */
+  font-weight: bold;
+  /* Bolder font for emphasis */
+}
+
+.descriptionColor, .quoteColor, .quoteAuthorColor {
+  font-size: 1.1em;
+  /* /Slightly larger font size than the default for readability */
+}
+
+.quoteAuthorColor {
+  font-style: italic;
+  /* Stylistic choice to differentiate the author */
+  margin-top: 5px;
+  /* Additional top margin to space out from the quote */
+}
+
+.ab {
+  font-size: 75px;
+  padding-top: 75px;
+}
+
+.rochester-video {
+  width: 100%;
+  max-height: 600px;
+  /* or any other dimensions */
+  object-fit: cover;
+  /* This will ensure the video covers the area similarly to your image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rochester-video {
+    height: 300px;
+    /* Adjusts the height for devices with widths up to 768px */
+  }
+}
+
+@media (max-width: 480px) {
+  .titleColor, .descriptionColor, .quoteColor, .quoteAuthorColor, .ab {
+    width: 340px;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .titleColor, .descriptionColor, .quoteColor, .quoteAuthorColor, .ab {
+    max-width: 90%;
+    /* Allow text to take more width */
+    font-size: 0.9em;
+    /* Adjust font size for readability */
+  }
+
+  .ab {
+    font-size: 50px;
+    /* Slightly reduce the huge font size for the main title */
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .titleColor, .descriptionColor, .quoteColor, .quoteAuthorColor {
+    max-width: 100%;
+    /* Use the full width for smaller devices */
+    font-size: 0.8em;
+    /* Further reduce font size for very small screens */
+  }
+
+  .ab {
+    font-size: 40px;
+    /* Further reduce for smaller screens */
+  }
+
+}
