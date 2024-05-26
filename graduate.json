@@ -1,0 +1,50 @@
+{
+    "graduate": [
+        {
+            "degreeName": "ist",
+            "title": "Information Sciences & Technologies, M.S.",
+            "description": "Explore how information is understood and applied in the modern computing industry. Merge theory and practice in a career-focused program.",
+            "concentrations": [
+                "Information Management and Database Technology",
+                "Web Systems and Integration Technologies",
+                "Discovery Informatics"
+            ],
+            "availableCertificates": {
+                "title": "Certificate in Advanced Computing",
+                "details": "This certificate offers advanced computing skills...",
+                "requirements": "Completion of 5 courses in advanced computing...",
+                "link": "/apply-now"
+            }
+        },
+        {
+            "degreeName": "hci",
+            "title": "Human Computer Interaction, M.S.",
+            "description": "Study the design, evaluation, and implementation of interactive computing systems for human use. Explore themes in user experience, information architecture, and usability.",
+            "concentrations": [
+                "Web Development",
+                "Geographic Information Science & Technology",
+                "Biomedical Informatics",
+                "e-Learning Technologies",
+                "Smart Device Application Design & Development",
+                "Ergonomics and Safety"
+            ]
+        },
+        {
+            "degreeName": "nsa",
+            "title": "Networking & Systems Administration, M.S.",
+            "description": "  Manage emerging technology on a global scale.",
+            "concentrations": [
+                "Research",
+                "Professional",
+                "Management"
+            ]
+        },
+        {
+            "degreeName": "graduate advanced certificates",
+            "availableCertificates": [
+                "Web Development Advanced certificate",
+                "Networking,Planning and Design Advanced Cerificate"
+            ]
+        }
+    ]
+}
